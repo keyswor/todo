@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   root 'home#index'
-  resources :lists
+  resources :lists do
+  resources :tasks
+end
   # get 'lists/index'
 
   # get 'lists/new'

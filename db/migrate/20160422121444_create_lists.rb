@@ -1,8 +1,8 @@
 class CreateLists < ActiveRecord::Migration
   def change
     create_table :lists do |t|
-      t.string :title
-
+      t.string :name
+      t.boolean :done
       t.timestamps null: false
     end
   end
